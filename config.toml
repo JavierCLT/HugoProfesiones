@@ -1,0 +1,30 @@
+baseURL = "http://localhost:1313/"
+languageCode = "es-es"
+title = "200 Profesiones Explicadas"
+theme = "ananke"
+
+[permalinks]
+  profesiones = "/profesiones/:slug/"
+
+[params]
+  description = "Guía detallada sobre profesiones."
+  author = "Javier Sanz"
+
+[Taxonomies]
+  category = "categorias"
+  tag = "tags"
+
+[menu]
+[[menu.main]]
+    name = "Inicio"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Profesiones"
+    url = "/profesiones/"
+    weight = 2
+
+[outputs]
+  home = ["HTML", "RSS", "SITEMAP"]
+  page = ["HTML"]
+  section = ["HTML", "SITEMAP"]
